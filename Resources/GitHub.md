@@ -1,7 +1,3 @@
-Certainly! Here's an updated guide with information on moving back to `main` and pulling the latest changes after the merge has been approved:
-
----
-
 # Student Guide: Submitting Code Changes with Git and GitHub
 
 Hello! This guide will help you navigate through making code changes, submitting them for review, and keeping your local code up-to-date. Let's dive in!
