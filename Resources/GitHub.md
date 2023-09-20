@@ -1,43 +1,44 @@
-Of course! Here's the guide formatted in a student-friendly way:
+Certainly! Here's an updated guide with information on moving back to `main` and pulling the latest changes after the merge has been approved:
 
 ---
 
 # Student Guide: Submitting Code Changes with Git and GitHub
 
-Hello! This guide will walk you through the process of making code changes, submitting them for review, and waiting for approval. Don't worry, it's easier than it sounds. Let's get started!
+Hello! This guide will help you navigate through making code changes, submitting them for review, and keeping your local code up-to-date. Let's dive in!
 
 ## 1. **Creating Your Own Working Branch**:
 
 
-Create a branch to work in:
+
+create a branch to work in:
 
 ```bash
 git checkout -b your-branch-name
 ```
-> 🚀 Tip: Name your branch something descriptive about the changes you're making. For example, if you're working on a calculator project, you might name it `fix-calculator-divide-bug`.
+> 🚀 Tip: Choose a descriptive name for your branch. For instance, if you're working on a calculator project, consider `fix-calculator-divide-bug`.
 
 ## 2. **Make and Save Your Changes**:
 
-This is where you code! After you've made your changes, you'll want to save (or "commit") them:
+Once you're ready to turn in your work, save (or "commit") them:
 
 ```bash
-# This adds all of your changes to a staging area.
+# This stages all your changes.
 git add .
 
-# This saves your staged changes along with a descriptive message.
+# This commits your staged changes with a message describing what you did.
 git commit -m "Short description of the changes you made"
 ```
 
 ## 3. **Share Your Changes**:
 
-Now, you'll push (or "upload") your changes to GitHub:
+Next, you'll upload (or "push") your changes to GitHub:
 
 ```bash
-# This sends your branch and changes to GitHub. The first time you push your branch, you'll set its "upstream".
+# This sends your branch and changes to GitHub. For the first-time push of this branch, set its "upstream".
 git push --set-upstream origin your-branch-name
 ```
 
-If you've already set the upstream for this branch before, you can simply use:
+If you've pushed this branch before, simply use:
 
 ```bash
 git push
@@ -46,14 +47,30 @@ git push
 ## 4. **Requesting Your Changes to be Reviewed**:
 
 1. Go to the GitHub page of our class repository.
-2. You'll likely see a notification suggesting you to create a pull request with the changes you just pushed. If so, click on **Compare & pull request**.
-3. If you don't see the notification:
-   - Click the **Pull requests** tab.
-   - Then, click **New pull request**.
-   - Make sure to select `main` for the "base" branch and `your-branch-name` for the "compare" branch.
-4. Write a brief title and description for your pull request to explain your changes.
-5. Click **Create pull request**.
+2. You might see a suggestion to create a pull request for the changes you've just pushed. If so, click on **Compare & pull request**.
+3. If not:
+   - Head to the **Pull requests** tab.
+   - Click **New pull request**.
+   - Ensure the "base" branch is `main` and the "compare" branch is `your-branch-name`.
+4. Write a brief title and description explaining your changes.
+5. Hit **Create pull request**.
 
-Now your changes are submitted for review! 🎉
+Your changes are now awaiting review! 🎉
 
-> 🌟 Note: Once you've submitted your pull request, you don't need to do anything else! Just wait for feedback or approval. If any changes are requested, you can make them in your branch, commit them, and push again. They'll automatically be added to your pull request.
+## 5. **Updating Your Local Main After Approval**:
+
+AFTER your pull request has been reviewed and merged:
+
+1. Move back to your `main` branch:
+
+```bash
+git checkout main
+```
+
+2. Update it with the latest changes from the class repository:
+
+```bash
+git pull origin main
+```
+
+Now, your local `main` branch is up-to-date with all the latest approved changes.
