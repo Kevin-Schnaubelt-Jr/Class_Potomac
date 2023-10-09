@@ -1,5 +1,5 @@
 
-import requests, json
+```import requests, json
 
 url = 'https://favqs.com/api/qotd/'
 
@@ -8,4 +8,4 @@ url = 'https://favqs.com/api/qotd/'
 response = requests.get(url, headers={'Authorization': 'Token token="855df50978dc9afd6bf86579913c9f8b"'})
 data = json.loads(response.text)
 
-print(data)
+print(data)```
