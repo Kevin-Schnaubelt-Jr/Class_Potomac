@@ -1,4 +1,4 @@
 # Class Potomac
 
 ## Wednesday Class 10/11
-### [Flexbox Froggy!](https://flexboxfroggy.com/)https://flexboxfroggy.com/)
+### [Flexbox Froggy!](https://flexboxfroggy.com/)
