@@ -49,4 +49,3 @@ if choice == "yes":
     print(f"money lost:{moneyspent}")
     print(f"money gained:{moneygained}")
     print(f"your balance is:{balance}")
-    print(f"your numbers are:{yournumlist}")
