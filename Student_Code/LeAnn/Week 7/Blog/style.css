@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+H1{
+    font-size: 2rem;
+    color: rgb(231, 136, 13);
+}
+.post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+#post {
+    border: 5px solid rgb(231, 136, 13);
+    border-radius: 10px;
+}
+
+.pfp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 3rem;
+    height: 3rem;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+#pfp {
+    width: 3rem
+}
